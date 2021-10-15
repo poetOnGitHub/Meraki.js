@@ -1,0 +1,18 @@
+{
+  "name": "meraki",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "poetOnGitHub",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^13.2.0"
+  },
+  "devDependencies": {
+    "slash-create": "^4.3.0"
+  }
+}
