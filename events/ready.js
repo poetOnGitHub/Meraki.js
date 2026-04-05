@@ -1,1 +1,1 @@
-module.exports = async () => console.log('Ready');
+module.exports = async (client) => console.log('Ready');
