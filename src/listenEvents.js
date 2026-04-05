@@ -2,11 +2,10 @@ const { readdirSync } = require('fs');
 
 const events = readdirSync('./events/').filter(file => file.endsWith('.js'));
 
-events.map(file => {
-    console.log('Loading events');
-
+events.forEach(file => {
     const event = require(`../events/${file}`);
-    console.log(`Loaded event ${file.split('.')[0]}`);
+    const eventName = file.split('.')[0];
+    console.log(`Loaded event: ${eventName}`);
 
-    client.on(file.split('.')[0], event.bind(null, client));
-})
+    client.on(eventName, event.bind(null, client));
+});
